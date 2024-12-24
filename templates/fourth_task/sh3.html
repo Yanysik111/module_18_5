@@ -1,0 +1,17 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block title%}cart{{ block.super }}{% endblock %}
+
+{% block pagename %}
+    <h1>Корзина</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<h1>Извините, Ваша корзина пуста</h1>
+<button><a href="http://127.0.0.1:8000/platform/">Вернуться обратно</a></button>
+{% endblock %}
+

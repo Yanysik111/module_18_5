@@ -1,0 +1,21 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block title%}Games{{ block.super }}{% endblock %}
+
+{% block pagename %}
+    <h1>Игры</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for i in games%}
+    <li>{{i}}<button>Купить</button></li>
+    {% endfor %}
+</ul>
+<button><a href="http://127.0.0.1:8000/platform">Вернуться обратно</a></button>
+{% endblock %}
+
